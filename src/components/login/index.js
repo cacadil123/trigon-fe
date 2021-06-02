@@ -131,6 +131,9 @@ const SingleSignOn = () => {
                       if(res.data.redirect === 2) {
                         setError(null);
                       }
+                      if(res.data.message === 'Code is verified!, You are loggedIn successfully!') {
+                        window.location.assign('https://www.tigon.one/');
+                      }
                       console.log('res', res);
                     })
                     .catch((err) => {
