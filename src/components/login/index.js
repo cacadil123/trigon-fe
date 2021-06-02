@@ -70,12 +70,12 @@ const SingleSignOn = () => {
  
   const getApiLink = () =>{
     if(error === 0) {
-      return 'http://localhost:5000/api/v1/users/register';
+      return 'http://15.206.169.165/api/v1/users/register';
     }
     if(error === 1){
-      return 'http://localhost:5000/api/v1/users/verify-code';   
+      return 'http://15.206.169.165/api/v1/users/verify-code';   
     }
-    return 'http://localhost:5000/api/v1/users/verify-user';
+    return 'http://15.206.169.165/api/v1/users/verify-user';
   }
   const getAlertType = () => {
     if(type === 'success') {
